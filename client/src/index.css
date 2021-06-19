@@ -1,0 +1,28 @@
+@import "fonts.css";
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Container */
+.container{
+  max-width: 1180px;
+  margin: 0 auto;
+}

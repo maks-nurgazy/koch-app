@@ -1,0 +1,147 @@
+/*Card Section*/
+.section__card {
+    padding-top: 30px;
+    padding-bottom: 79px;
+
+    background: #E5E5E5;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card__item {
+    width: 49%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.card__inner {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.card__name {
+    font-family: "Gilroy-Bold", serif;
+    font-size: 18px;
+
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.card__direction {
+    padding-top: 9px;
+    font-family: "Gilroy-Medium", serif;
+    font-size: 16px;
+
+    color: #909090;
+}
+
+.card__direction-from::before {
+    content: url("../../assets/images/card_from_icon.png");
+    padding-right: 10px;
+}
+
+.card__direction-to::before {
+    content: url("../../assets/images/card-to-icon.png");
+    padding-right: 10px;
+}
+
+.card__main-information {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 16px;
+    padding-bottom: 10px;
+}
+
+.card__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+
+    font-family: "Gilroy-Medium", serif;
+    font-size: 12px;
+    padding-bottom: 16px;
+
+    color: #000000;
+}
+
+.card__price {
+    font-family: "Gilroy-SemiBold", serif;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    padding: 4px 12px;
+
+    height: 27px;
+
+    background: #0FA958;
+    border-radius: 4px;
+}
+
+.card__line {
+    height: 1px;
+    width: 100%;
+
+    background: #E0E0E0;
+    border-radius: 4px;
+}
+
+.card__addition-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+}
+
+.card__period {
+    font-family: "Gilroy-Medium", serif;
+    font-size: 12px;
+
+    color: #909090;
+}
+
+.card__addition-btn {
+    font-family: "Gilroy-SemiBold", serif;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    padding: 0 12px;
+    height: 27px;
+
+    text-decoration: none;
+    background: #007AFF;
+    border: 1px solid #007AFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Card Next*/
+.card__next {
+    display: flex;
+    padding-top: 50px;
+}
+
+.card__next-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Gilroy-SemiBold", serif;
+    font-size: 16px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+    background: #007AFF;
+    border-radius: 4px;
+    padding: 8px 0;
+}

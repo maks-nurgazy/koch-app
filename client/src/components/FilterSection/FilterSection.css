@@ -1,0 +1,204 @@
+/*Main Menu*/
+.main__menu {
+    padding-top: 40px;
+}
+
+.menu__name {
+    font-family: "Gilroy-SemiBold", serif;
+    font-size: 28px;
+
+    color: #000000;
+}
+
+/*Filtered Transport Section*/
+.section__filteredTransport {
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.filter {
+    width: 800px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(144, 144, 144, 0.25);
+    border-radius: 10px;
+}
+
+.filter__item {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 20px 30px;
+}
+
+.filter__chooser {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: "Gilroy-Medium", serif;
+    font-size: 16px;
+
+    color: #000000;
+}
+
+.filter__search-fields {
+    padding-left: 12px;
+}
+
+.filter__goods, .filter__transport {
+    color: #909090;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
+    text-decoration: none;
+
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.filter__kind {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 39px;
+}
+
+.filter__kind-transport {
+    width: 111px;
+    color: #909090;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
+    text-decoration: none;
+    font-family: "Gilroy-Medium", serif;
+    font-size: 16px;
+
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.filter__active {
+    color: #000000;
+    background: #E5F2FF;
+    border: 1px solid #007AFF;
+    box-sizing: border-box;
+    border-radius: 4px 0px 0px 4px;
+}
+
+/*Filter Direction*/
+.filter__direction {
+    padding-top: 30px;
+}
+
+.filter__title {
+    font-family: "Gilroy-Medium", serif;
+    font-size: 12px;
+
+    padding-top: 20px;
+    color: #000000;
+}
+
+.filter__direction-from, .filter__direction-to {
+    display: flex;
+    padding-top: 4px;
+}
+
+.filter__direction-city {
+    padding-left: 12px;
+}
+
+.filter__direction-selection {
+    font-family: "Gilroy-Medium", serif;
+    font-size: 16px;
+
+    color: #909090;
+
+    width: 200px;
+    padding: 8px 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.filter__date {
+    display: flex;
+    align-items: center;
+
+    font-family: "Gilroy-Medium", serif;
+    font-size: 16px;
+
+    color: #007AFF;
+    padding: 8px 12px;
+
+    background: #E5F2FF;
+    border-radius: 4px;
+}
+
+/*Filter Size*/
+.filter__size-information {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter__volume, .filter__price, .filter__kind {
+    padding-left: 12px;
+}
+
+.filter__size-from, .filter__size-to {
+    display: flex;
+    padding-top: 4px;
+}
+
+.filter__size-selection {
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+
+    color: #909090;
+    width: 100px;
+    padding: 8px 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 4px 4px;
+}
+
+.filter__price-selection {
+    width: 145px;
+}
+
+.filter__price {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Filter Buttons*/
+.filter__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 33px;
+}
+
+.filter__reset-btn, .filter__show-btn {
+    font-family: "Gilroy-SemiBold";
+    font-size: 16px;
+
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter__reset-btn {
+    background: #ff0000;
+    border: 1px solid #ff0000;
+    padding: 8px 55px
+}
+
+.filter__show-btn {
+    background: #007AFF;
+    border: 1px solid #007AFF;
+    padding: 8px 85px;
+}

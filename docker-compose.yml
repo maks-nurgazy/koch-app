@@ -1,0 +1,44 @@
+version: "3.7"
+
+services:
+  db:
+    image: postgres:12-alpine
+    env_file:
+      - .env
+    volumes:
+      - koch-data:/var/lib/postgresql/data/
+    restart: always
+
+  backend: &backend
+    build:
+      context: kochapp/
+      dockerfile: ../compose/django.Dockerfile
+    image: kochapp-backend
+    env_file:
+      - .env
+    volumes:
+      - media:/app/media/
+      - static:/app/static/
+      # For local development only
+      - ./kochapp/:/app/
+    command: sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - db
+    restart: always
+
+  nginx:
+    volumes:
+      - media:/usr/media/:ro
+      - static:/usr/static/:ro
+      - ./config/local.nginx:/etc/nginx/conf.d/default.conf
+      - ./client/build/:/www/data/kochapp/
+    image: nginx:1.17.9-alpine
+    ports:
+      - 80:80
+    depends_on:
+      - backend
+
+volumes:
+  koch-data:
+  media:
+  static:
